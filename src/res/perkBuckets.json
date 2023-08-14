@@ -1,5 +1,5 @@
 {
-    "Chest": {
+    "Plastrons": {
         "inPool": [
             "perkid_ability_hatchet_feralrush",
             "perkid_ability_hatchet_berserk",
@@ -119,7 +119,7 @@
             "perkid_pvp_armor_siegedamagereduction"
         ]
     },
-    "Helmet": {
+    "Casques": {
         "inPool": [
             "perkid_ability_hatchet_feralrush",
             "perkid_ability_hatchet_berserk",
@@ -239,7 +239,7 @@
             "perkid_pvp_armor_siegedamagereduction"
         ]
     },
-    "Gloves": {
+    "Gants": {
         "inPool": [
             "perkid_ability_hatchet_feralrush",
             "perkid_ability_hatchet_berserk",
@@ -359,7 +359,7 @@
             "perkid_pvp_armor_siegedamagereduction"
         ]
     },
-    "Pants": {
+    "Pantalons": {
         "inPool": [
             "perkid_ability_hatchet_feralrush",
             "perkid_ability_hatchet_berserk",
@@ -479,7 +479,7 @@
             "perkid_pvp_armor_siegedamagereduction"
         ]
     },
-    "Shoes": {
+    "Chaussures": {
         "inPool": [
             "perkid_ability_hatchet_feralrush",
             "perkid_ability_hatchet_berserk",
@@ -598,16 +598,7 @@
             "perkid_pvp_armor_siegedamagereduction"
         ]
     },
-    "Fishing Pole": {
-        "inPool": [],
-        "onlyWithCharm": [
-            "perkid_tools_durability",
-            "perkid_tools_azothgain",
-            "perkid_tools_hasteongather",
-            "perkid_tools_gatherproc_regen"
-        ]
-    },
-    "Hatchet": {
+    "Hachette": {
         "inPool": [
             "perkid_ability_hatchet_feralrush",
             "perkid_ability_hatchet_berserk",
@@ -675,7 +666,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "War Hammer": {
+    "Marteau": {
         "inPool": [
             "perkid_ability_hammer_armorbreaker",
             "perkid_ability_hammer_mightygavel",
@@ -741,7 +732,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Musket": {
+    "Mousquet": {
         "inPool": [
             "perkid_ability_musket_powderburn",
             "perkid_ability_musket_powershot",
@@ -798,7 +789,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Spear": {
+    "Lance": {
         "inPool": [
             "perkid_ability_spear_sweep",
             "perkid_ability_spear_javelin",
@@ -865,7 +856,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Bow": {
+    "Arc": {
         "inPool": [
             "perkid_ability_bow_poisonshot",
             "perkid_ability_bow_evadeshot",
@@ -922,7 +913,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Rapier": {
+    "Rapière": {
         "inPool": [
             "perkid_ability_rapier_tondo",
             "perkid_ability_rapier_flourishandfinish",
@@ -989,7 +980,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Life Staff": {
+    "Bâton de vie": {
         "inPool": [
             "perkid_ability_lifestaff_divineembrance",
             "perkid_ability_lifestaff_sacredground",
@@ -1044,7 +1035,7 @@
             "perkid_pvp_weaponmagic_dmgtohaste"
         ]
     },
-    "Fire Staff": {
+    "Bâton de feu": {
         "inPool": [
             "perkid_ability_firestaff_pillaroffire",
             "perkid_ability_firestaff_meteorshower",
@@ -1100,7 +1091,7 @@
             "perkid_pvp_weaponmagic_dmgtohaste"
         ]
     },
-    "Sword": {
+    "Épée": {
         "inPool": [
             "perkid_ability_sword_reversestab",
             "perkid_ability_sword_whirlingblade",
@@ -1163,7 +1154,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Kite Shield": {
+    "Bouclier Normand": {
         "inPool": [
             "perkid_ability_shield_shieldbash",
             "perkid_ability_shield_shieldrush",
@@ -1202,7 +1193,7 @@
             "perkid_pvp_shield_fortifystackonblock"
         ]
     },
-    "Tower Shield": {
+    "Pavois": {
         "inPool": [
             "perkid_ability_shield_shieldbash",
             "perkid_ability_shield_shieldrush",
@@ -1238,7 +1229,7 @@
             "perkid_pvp_shield_fortifystackonblock"
         ]
     },
-    "Round Shield": {
+    "Targe": {
         "inPool": [
             "perkid_ability_shield_shieldbash",
             "perkid_ability_shield_shieldrush",
@@ -1272,7 +1263,7 @@
             "perkid_pvp_shield_fortifystackonblock"
         ]
     },
-    "Great Axe": {
+    "Hache double": {
         "inPool": [
             "perkid_ability_greataxe_charge",
             "perkid_ability_greataxe_reap",
@@ -1338,7 +1329,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Ice Gauntlet": {
+    "Gantelet de glace": {
         "inPool": [
             "perkid_ability_icegauntlet_unbrokenwinds",
             "perkid_ability_icegauntlet_unendingthaw",
@@ -1393,7 +1384,7 @@
             "perkid_pvp_weaponmagic_dmgtohaste"
         ]
     },
-    "Void Gauntlet": {
+    "Gantelet du néant": {
         "inPool": [
             "perkid_ability_voidgauntlet_voidblade_lifesteal",
             "perkid_ability_voidgauntlet_nullchamber_nullify",
@@ -1449,7 +1440,7 @@
             "perkid_pvp_weaponmagic_dmgtohaste"
         ]
     },
-    "Blunderbuss": {
+    "Tromblon": {
         "inPool": [
             "perkid_ability_blunderbuss_netshot",
             "perkid_ability_blunderbuss_azothshrapnelblast",
@@ -1504,7 +1495,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Greatsword": {
+    "Épée longue": {
         "inPool": [
             "perkid_ability_greatsword_dashattack",
             "perkid_ability_greatsword_combo",
@@ -1570,7 +1561,7 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Ring": {
+    "Anneau": {
         "inPool": [
             "perkid_common_cdr",
             "perkid_common_cdronhit",
@@ -1603,7 +1594,7 @@
             "perkid_pvp_ring_dmgpertargetbuff"
         ]
     },
-    "Amulet": {
+    "Amulette": {
         "inPool": [
             "perkid_common_cdr",
             "perkid_common_cdronhit",
@@ -1638,7 +1629,7 @@
             "perkid_pvp_amulet_dodgesuccess_dmg"
         ]
     },
-    "Earring": {
+    "Boucle d'oreille": {
         "inPool": [
             "perkid_common_cdr",
             "perkid_common_cdronhit",
@@ -1664,7 +1655,16 @@
         ],
         "onlyWithCharm": []
     },
-    "Bag": {
+    "Canne à pêche": {
+        "inPool": [],
+        "onlyWithCharm": [
+            "perkid_tools_durability",
+            "perkid_tools_azothgain",
+            "perkid_tools_hasteongather",
+            "perkid_tools_gatherproc_regen"
+        ]
+    },
+    "Sac": {
         "inPool": [
             "perkid_common_luck"
         ],
@@ -1682,7 +1682,7 @@
             "perkid_bags_factiongain"
         ]
     },
-    "Logging Axe": {
+    "Hache de bûcheron": {
         "inPool": [],
         "onlyWithCharm": [
             "perkid_tools_durability",
@@ -1695,7 +1695,7 @@
             "perkid_tools_gatherproc_regen"
         ]
     },
-    "Skinning Knife": {
+    "Couteau à dépecer": {
         "inPool": [],
         "onlyWithCharm": [
             "perkid_tools_durability",
@@ -1708,7 +1708,7 @@
             "perkid_tools_gatherproc_regen"
         ]
     },
-    "Sickle": {
+    "Faucille": {
         "inPool": [],
         "onlyWithCharm": [
             "perkid_tools_durability",
@@ -1721,7 +1721,7 @@
             "perkid_tools_gatherproc_regen"
         ]
     },
-    "Pickaxe": {
+    "Pioche": {
         "inPool": [],
         "onlyWithCharm": [
             "perkid_tools_durability",
@@ -1734,7 +1734,7 @@
             "perkid_tools_gatherproc_regen"
         ]
     },
-    "Dagger": {
+    "Dague": {
         "inPool": [
             "perkid_weapon_threatadd",
             "perkid_weapon_threatsub",
@@ -1783,23 +1783,23 @@
             "perkid_pvp_weapon_exhaustedtarget_slow"
         ]
     },
-    "Flute": {
+    "Flûte": {
         "inPool": [],
         "onlyWithCharm": []
     },
-    "Drums": {
+    "Tambour": {
         "inPool": [],
         "onlyWithCharm": []
     },
-    "Guitar": {
+    "Guitare": {
         "inPool": [],
         "onlyWithCharm": []
     },
-    "Upright Bass": {
+    "Contrebasse": {
         "inPool": [],
         "onlyWithCharm": []
     },
-    "Mandolin": {
+    "Mandoline": {
         "inPool": [],
         "onlyWithCharm": []
     },

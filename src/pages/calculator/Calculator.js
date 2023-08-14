@@ -124,8 +124,8 @@ function Calculator() {
                                         <Grid item md={3} xs={12}>
                                             <TextField onChange={(e) => setMode(e.target.value)} select fullWidth color="secondary" label="Mode" value={mode} variant="outlined" >
                                                 <MenuItem value="normal">Normal</MenuItem>
-                                                <MenuItem value="runestone">Runestone Stopwatch</MenuItem>
-                                                <MenuItem value="scarab">Golden Scarab</MenuItem>
+                                                    <MenuItem value="runestone">Chronomètre en pierre runique</MenuItem>
+                                                    <MenuItem value="scarab">Scarabée d'or</MenuItem>
                                             </TextField>
                                         </Grid>
                                         <Grid item md={4} xs={12} spacing={2} container justifyContent="space-between" direction="column"  >

@@ -93,7 +93,7 @@ function PerkSelector(props) {
                         ),
                     }}
                     color="secondary"
-                    label="Search"
+                    label="Rechercher"
                     value={filter}
                     onChange={handleFilterChange}
                 />
@@ -119,7 +119,7 @@ function PerkSelector(props) {
                         <TextField
                             color="secondary"
                             {...params}
-                            label="Filter by Label"
+                            label="Filtrer par étiquette"
                             placeholder="Label"
                         />
                     )}
@@ -145,7 +145,7 @@ function PerkSelector(props) {
                         <TextField
                             color="secondary"
                             {...params}
-                            label="Exclude Perks by Label"
+                            label="Exclure les atouts par étiquette"
                             placeholder="Label"
                         />
                     )}

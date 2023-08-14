@@ -104,7 +104,7 @@ export default function PerkContainerSingle(props) {
         content = (
             <div style={{ paddingTop: '1em', minHeight: '8em' }}>
                 <Typography style={{ margin: '0em 0em 0.5em 0.5em', paddingBottom: '0.5em' }} variant="h6" >
-                    {`Perk Slot ${index + 1}`}
+                    {`Emplacement d'atout ${index + 1}`}
                 </Typography>
                 {perks.map((perk, ind) => {
                     return <ReducedPerkBanner selector={selector} onDelete={(perk) => onDelete(index, perk)} key={perk.perk.perkId} containerId={index} perk={perk} />
