@@ -21,7 +21,7 @@ function PerkSlotSelectorDialog(props) {
             <Grid style={{paddingRight: '1em'}} container alignItems={"center"} justifyContent={"space-between"} >
                 <Grid item>
                     <DialogTitle>
-                        Select a Perk Slot
+                        Sélectionnez un emplacement d'avantage
                     </DialogTitle>
                 </Grid>
                 <Grid >

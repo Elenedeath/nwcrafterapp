@@ -138,7 +138,7 @@ function Calculator() {
                                                     fullWidth
                                                     variant="outlined"
                                                 >
-                                                    Calculate
+                                                    Calculer
                                                 </Button>
                                             </Grid>
                                             <Grid item>
@@ -150,7 +150,7 @@ function Calculator() {
                                                     onClick={() => openCalculateMostEfficientCharm(perkCalculator.current.calculateMostEfficientCharm(selectedPerks, mode))}
 
                                                 >
-                                                    Calculate most efficient charm
+                                                    Calculer le charme le plus efficace
                                                 </Button>
 
                                             </Grid>

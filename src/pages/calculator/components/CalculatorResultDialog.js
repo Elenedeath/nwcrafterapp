@@ -76,11 +76,11 @@ export default function CalculatorResultDialog(props) {
                                 <Table size="small" sx={{ fontSize: '200pt' }}>
                                     <TableBody>
                                         <TableRow>
-                                            <TableCell sx={style}> Chance to hit epic:</TableCell>
+                                            <TableCell sx={style}> Chance de toucher du épique :</TableCell>
                                             <TableCell sx={style} align="right">{toPercent(result.chanceToHitEpic)}</TableCell>
                                         </TableRow>
                                         <TableRow >
-                                            <TableCell sx={style}> Chance to hit selected perks on epic item:</TableCell>
+                                            <TableCell sx={style}> Chance d'obtenir des avantages sélectionnés sur un objet épique :</TableCell>
                                             <TableCell sx={style} align="right"> {toPercent(result.epicChance)}</TableCell>
                                         </TableRow>
                                     </TableBody>
@@ -114,11 +114,11 @@ export default function CalculatorResultDialog(props) {
                                 <Table size="small" sx={{ fontSize: '200pt' }}>
                                     <TableBody>
                                         <TableRow >
-                                            <TableCell sx={style}> Chance to hit legendary:</TableCell>
+                                            <TableCell sx={style}> Chance de toucher du légendaire :</TableCell>
                                             <TableCell sx={style} align="right">{toPercent(result.chanceToHitLegendary)}</TableCell>
                                         </TableRow>
                                         <TableRow>
-                                            <TableCell sx={style}> Chance to hit selected perks on legendary item:</TableCell>
+                                            <TableCell sx={style}> Chance d'obtenir des avantages sélectionnés sur un objet légendaire :</TableCell>
                                             <TableCell sx={style} align="right"> {toPercent(result.legendaryChance)}</TableCell>
                                         </TableRow>
                                     </TableBody>
@@ -175,7 +175,7 @@ export default function CalculatorResultDialog(props) {
                         <TableCell></TableCell>
                         <TableCell sx={style} >
                             <>
-                                {"Probability of hitting after: "}
+                                {"Probabilité de toucher après : "}
                                 <TextField
                                     value={calcTries.toString()}
                                     onChange={handleChange}

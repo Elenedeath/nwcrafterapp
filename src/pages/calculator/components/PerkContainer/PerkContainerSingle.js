@@ -56,9 +56,9 @@ export default function PerkContainerSingle(props) {
 
     const getCause = () => {
         if(perks.some(perk => perk.charm)) {
-            return "Can't add Perks to a Perk Slot with a charm"
+            return "Impossible d'ajouter des avantages à un emplacement d'avantage avec un charme"
         } else {
-            return "This perk is exclusive with perks in other Perk Slots";
+            return "Cet avantage est exclusif aux avantages des autres emplacements d'avantages";
         }
     }
 
@@ -68,7 +68,7 @@ export default function PerkContainerSingle(props) {
                 <span>Press </span><AddIcon /> <span> on Perks below to add them</span> 
             </div>
         }
-        return "Drag in Perks to add them to this pool"
+        return "Faites glisser les avantages pour les ajouter à ce groupe"
     }
 
     const handleClick = () => {
@@ -122,7 +122,7 @@ export default function PerkContainerSingle(props) {
                 {
                     (!selector && charm) && (
                         <Stack style={{ height: '5em', display: 'flex', alignItems: 'center', opacity: 0.5 }} direction='row' justifyContent={"center"} >
-                            <Tooltip title="Charms can only be added onto empty Perk Slots" open={tooltipOpen && (perks.length !== 0)} >
+                            <Tooltip title="Les charmes ne peuvent être ajoutés que sur des emplacements d'avantages vides" open={tooltipOpen && (perks.length !== 0)} >
                                 <div onMouseEnter={() => setTooltipOpen(true) } onMouseLeave={() => setTooltipOpen(false) } >
                                     <Button disabled={perks.length !== 0} onClick={() => handleAddPerkWithCharm(index)} color="secondary" variant="outlined" >
                                         Add Perk with Charm

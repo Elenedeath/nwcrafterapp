@@ -87,8 +87,8 @@ function PerkBanner(props) {
         <Tooltip
           title={
             <h3>
-              This perk can not be rolled and therefor not be selected. If you want to craft an item
-              with this perk chose "Add Perk With Charm" instead.
+              Cet avantage ne peut pas être roulé et donc pas sélectionné. Si vous voulez fabriquer un objet
+              avec cet avantage, choisissez "Ajouter un avantage avec charme" à la place.
             </h3>
           }
         >
