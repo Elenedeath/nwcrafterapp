@@ -36,7 +36,7 @@ export default function MostEfficientCharmDialog(props) {
         const indexes = [...Array(perkLength).keys()]
         let names = [];
         if (indexes.length === 1) {
-            names.push("Perk")
+            names.push("Atout")
         } else {
             names = indexes.map(index => `Perk ${index + 1}`)
         }
@@ -46,14 +46,14 @@ export default function MostEfficientCharmDialog(props) {
                     {names.map((name, index) => (
                         <TableCell key={index} align="center" colSpan={2}>{name}</TableCell>
                     ))}
-                    <TableCell>Probability</TableCell>
-                    <TableCell>Avg. Tries</TableCell>
+                    <TableCell>Probabilité</TableCell>
+                    <TableCell>Essai moyen</TableCell>
                 </TableRow>
                 <TableRow>
                     {names.map((name, index) => (
                         <React.Fragment key={index} >
-                            <TableCell style={{top: 57}} >Name</TableCell>
-                            <TableCell style={{top: 57}} >Charm</TableCell>
+                            <TableCell style={{top: 57}} >Nom</TableCell>
+                            <TableCell style={{top: 57}} >Charme</TableCell>
                         </React.Fragment>
                     ))}
                     <TableCell colSpan={2} style={{top: 57}}></TableCell>
@@ -71,7 +71,7 @@ export default function MostEfficientCharmDialog(props) {
             open={open}
             fullWidth
         >
-            <DialogTitle>Calculation Result</DialogTitle>
+            <DialogTitle>Résultat du calcul</DialogTitle>
             <TableContainer sx={{ fontSize: '2' }} component={Paper}>
                 <Table sx={{ fontSize: '200pt' }} stickyHeader >
                     {generatePerkHeader()}

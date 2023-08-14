@@ -87,7 +87,7 @@ function PerkBanner(props) {
         <Tooltip
           title={
             <h3>
-              Cet avantage ne peut pas être roulé et donc pas sélectionné. Si vous voulez fabriquer un objet
+              Cet avantage ne peut pas être sélectionné. Si vous voulez fabriquer un objet
               avec cet avantage, choisissez "Ajouter un avantage avec charme" à la place.
             </h3>
           }

@@ -58,7 +58,7 @@ export default function PerkContainerSingle(props) {
         if(perks.some(perk => perk.charm)) {
             return "Impossible d'ajouter des avantages à un emplacement d'avantage avec un charme"
         } else {
-            return "Cet avantage est exclusif aux avantages des autres emplacements d'avantages";
+            return "Cet avantage est exclusif aux autres emplacements d'avantages";
         }
     }
 
@@ -125,7 +125,7 @@ export default function PerkContainerSingle(props) {
                             <Tooltip title="Les charmes ne peuvent être ajoutés que sur des emplacements d'avantages vides" open={tooltipOpen && (perks.length !== 0)} >
                                 <div onMouseEnter={() => setTooltipOpen(true) } onMouseLeave={() => setTooltipOpen(false) } >
                                     <Button disabled={perks.length !== 0} onClick={() => handleAddPerkWithCharm(index)} color="secondary" variant="outlined" >
-                                        Add Perk with Charm
+                                        Ajoutez un avantage avec du charme
                                     </Button>
                                 </div>
                             </Tooltip>

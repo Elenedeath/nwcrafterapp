@@ -66,7 +66,7 @@ export default function CalculatorResultDialog(props) {
                             {openEpic ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                         </IconButton>
                     </TableCell>
-                    <TableCell sx={style} >Total epic chance:</TableCell>
+                    <TableCell sx={style} >Chance épique totale :</TableCell>
                     <TableCell align="right" sx={style}>{toPercent(result.epicTotal)}</TableCell>
                 </TableRow>
                 <TableRow sx={{ '& > *': { border: 'unset' } }}>
@@ -104,7 +104,7 @@ export default function CalculatorResultDialog(props) {
                             {openLegendary ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                         </IconButton>
                     </TableCell>
-                    <TableCell sx={style} >Total legendary chance:</TableCell>
+                    <TableCell sx={style} >Chance légendaire totale :</TableCell>
                     <TableCell align="right" sx={style}>{toPercent(result.legendaryTotal)}</TableCell>
                 </TableRow>
                 <TableRow sx={{ '& > *': { border: 'unset' } }}>
@@ -142,7 +142,7 @@ export default function CalculatorResultDialog(props) {
                             {openTotal ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                         </IconButton>
                     </TableCell>
-                    <TableCell sx={style} >Total chance:</TableCell>
+                    <TableCell sx={style} >Chance totale :</TableCell>
                     <TableCell sx={style} align="right">{toPercent(result.total)}</TableCell>
                 </TableRow>
                 <TableRow >
@@ -168,7 +168,7 @@ export default function CalculatorResultDialog(props) {
                     {tableTotal()}
                     <TableRow>
                         <TableCell></TableCell>
-                        <TableCell sx={style} >Avg. crafting attempts:</TableCell>
+                        <TableCell sx={style} >Tentatives moyenne de craft :</TableCell>
                         <TableCell sx={style} align="right">{tries}</TableCell>
                     </TableRow>
                     <TableRow>
@@ -209,7 +209,7 @@ export default function CalculatorResultDialog(props) {
             <Grid style={{paddingRight: '1em'}} container alignItems={"center"} justifyContent={"space-between"} >
                 <Grid item>
                     <DialogTitle>
-                    Calculation Result
+                    Résultat du calcul
                     </DialogTitle>
                 </Grid>
                 <Grid >
