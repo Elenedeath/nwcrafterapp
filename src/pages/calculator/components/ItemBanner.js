@@ -2,9 +2,12 @@ import { useTheme } from "@emotion/react";
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import itemClasses from '../../../res/itemClasses.json'
+import itemClassesFR from '../../../res/itemClassesFR.json'
 import bgLegendary from '../../../res/bg/legendary.png'
 import bgEpic from '../../../res/bg/epic.png'
 
+//Translation module
+import { useTranslation} from 'react-i18next';
 
 function ItemBanner(props) {
 
@@ -16,14 +19,16 @@ function ItemBanner(props) {
         name: "Legendary"
     }
 
-
+	const { t, i18n } = useTranslation();
     const renderContent = () => {
         const {itemClass} = props;
-        const icon = itemClasses[itemClass].icon
-
-        const imgSrc = `${process.env.PUBLIC_URL}/res/${icon}`;
-
-
+		
+		if (i18n.language == 'en') {
+			var icon = itemClasses[itemClass].icon
+		}else{
+			var icon = itemClassesFR[itemClass].icon
+		}
+			const imgSrc = `${process.env.PUBLIC_URL}/res/${icon}`;
         return (
             <div style={{
                 backgroundImage: `url(${config.banner})`,

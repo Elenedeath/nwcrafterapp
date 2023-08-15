@@ -3,8 +3,13 @@ import React from "react";
 import PerkBanner from "../components/PerkBanner";
 import perkBuckets from '../../../res/perkBuckets.json'
 import perkMap from '../../../res/perkMapFiltered.json'
+import perkBucketsFR from '../../../res/perkBucketsFR.json'
+import perkMapFR from '../../../res/perkMapFilteredFR.json'
 import SearchIcon from '@mui/icons-material/Search';
 import utils from "../../../utils/utils";
+
+//Translation module
+import { useTranslation} from 'react-i18next';
 
 function PerkSelector(props) {
     
@@ -14,40 +19,72 @@ function PerkSelector(props) {
     const [excludedFilterLabels, setExcludedFilterLabels] = React.useState([]);
     const [filteredPerks, setFilteredPerks] = React.useState([]);
 
-
-    const generatePerks = () => {
-        let perksToFilter = perkBuckets[itemClass].inPool;
-        perksToFilter = perksToFilter.concat(perkBuckets[itemClass].onlyWithCharm);
-        return perksToFilter.map(perkId => {
-            const result = perkMap[perkId]
-            return result;
-        })
-        .sort((a, b) => {
-            if(!charmPerks) {
-                if(a.weight && !b.weight) {
-                    return -1;
-                } else if (!a.weight && b.weight) {
-                    return 1;
-                }
-            }
-            if (a.label[0] < b.label[0]) {
-                return -1
-            } else if (a.label[0] > b.label[0]) {
-                return 1;
-            } else {
-                if (a.name < b.name) {
-                    return -1
-                } else if (a.name > b.name) {
-                    return 1;
-                } else {
-                    return 0
-                }
-            }
-        })
-    }
-
-    const perks = React.useRef(generatePerks());
-
+	const { t, i18n } = useTranslation();
+	if (i18n.language == 'en') {
+		var generatePerks = () => {
+				let perksToFilter = perkBuckets[itemClass].inPool;
+				perksToFilter = perksToFilter.concat(perkBuckets[itemClass].onlyWithCharm);
+				return perksToFilter.map(perkId => {
+					const result = perkMap[perkId]
+					return result;
+				})
+			.sort((a, b) => {
+				if(!charmPerks) {
+					if(a.weight && !b.weight) {
+						return -1;
+					} else if (!a.weight && b.weight) {
+						return 1;
+					}
+				}
+				if (a.label[0] < b.label[0]) {
+					return -1
+				} else if (a.label[0] > b.label[0]) {
+					return 1;
+				} else {
+					if (a.name < b.name) {
+						return -1
+					} else if (a.name > b.name) {
+						return 1;
+					} else {
+						return 0
+					}
+				}
+			})
+		}
+	}else{
+		var generatePerks = () => {
+				let perksToFilter = perkBuckets[itemClass].inPool;
+				perksToFilter = perksToFilter.concat(perkBuckets[itemClass].onlyWithCharm);
+				return perksToFilter.map(perkId => {
+					const result = perkMap[perkId]
+					return result;
+				})
+			.sort((a, b) => {
+				if(!charmPerks) {
+					if(a.weight && !b.weight) {
+						return -1;
+					} else if (!a.weight && b.weight) {
+						return 1;
+					}
+				}
+				if (a.label[0] < b.label[0]) {
+					return -1
+				} else if (a.label[0] > b.label[0]) {
+					return 1;
+				} else {
+					if (a.name < b.name) {
+						return -1
+					} else if (a.name > b.name) {
+						return 1;
+					} else {
+						return 0
+					}
+				}
+			})
+		}
+	}
+	
+	const perks = React.useRef(generatePerks());	
     const generateOptions = React.useCallback(() => {
         const labels = new Set();
         perks.current.forEach(perk => {

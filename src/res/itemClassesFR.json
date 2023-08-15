@@ -1,77 +1,77 @@
 {
-    "Helmet": {
+    "Casques": {
         "icon": "icons/items/helm.png"
     },
-    "Chest": {
+    "Plastrons": {
         "icon": "icons/items/chestplate.png"
     },
-    "Gloves": {
+    "Gants": {
         "icon": "icons/items/gauntlets.png"
     },
-    "Pants": {
+    "Pantalons": {
         "icon": "icons/items/greaves.png"
     },
-    "Shoes": {
+    "Chaussures": {
         "icon": "icons/items/boots.png"
     },
-    "Hatchet": {
+    "Hachette": {
         "icon": "icons/items/hatchet.png"
     },
-    "War Hammer": {
+    "Marteau": {
         "icon": "icons/items/warhammer.png"
     },
-    "Musket": {
+    "Mousquet": {
         "icon": "icons/items/musket.png"
     },
-    "Spear": {
+    "Lance": {
         "icon": "icons/items/spear.png"
     },
-    "Bow": {
+    "Arc": {
         "icon": "icons/items/bow.png"
     },
-    "Rapier": {
+    "Rapière": {
         "icon": "icons/items/rapier.png"
     },
-    "Life Staff": {
+    "Bâton de vie": {
         "icon": "icons/items/lifestaff.png"
     },
-    "Fire Staff": {
+    "Bâton de feu": {
         "icon": "icons/items/firestaff.png"
     },
-    "Sword": {
+    "Épée": {
         "icon": "icons/items/sword.png"
     },
-    "Great Axe": {
+    "Hache double": {
         "icon": "icons/items/greataxe.png"
     },
-	"Greatsword": {
+	"Épée longue": {
         "icon": "icons/items/greatsword.png"
     },
-    "Ice Gauntlet": {
+    "Gantelet de glace": {
         "icon": "icons/items/icegauntlet.png"
     },
-    "Void Gauntlet": {
+    "Gantelet du néant": {
         "icon": "icons/items/voidgauntlet.png"
     },
-    "Blunderbuss": {
+    "Tromblon": {
         "icon": "icons/items/blunderbuss.png"
     },
-    "Ring": {
+    "Anneau": {
         "icon": "icons/items/ring.png"
     },
-    "Amulet": {
+    "Amulette": {
         "icon": "icons/items/amulet.png"
     },
-    "Earring": {
+    "Boucle d'oreille": {
         "icon": "icons/items/earring.png"
     },
-    "Kite Shield": {
+    "Bouclier Normand": {
         "icon": "icons/items/kiteshield.png"
     },
-    "Tower Shield": {
+    "Pavois": {
         "icon": "icons/items/towershield.png"
     },
-    "Round Shield": {
+    "Targe": {
         "icon": "icons/items/roundshield.png"
     }
 }

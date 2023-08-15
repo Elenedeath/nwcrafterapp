@@ -2,14 +2,21 @@ import utils from "./utils"
 import perkBuckets from '../res/perkBuckets.json'
 import perkMap from '../res/perkMapFiltered.json'
 import weights from '../res/perkWeights.json'
+import perkBucketsFR from '../res/perkBucketsFR.json'
+import perkMapFR from '../res/perkMapFilteredFR.json'
+import weightsFR from '../res/perkWeightsFR.json'
 import modes from "../pages/calculator/modes";
 
 export default class PerkCalculator {
 
-
     constructor(itemClass) {
         this.itemClass = itemClass;
         this.availablePerks = perkBuckets[this.itemClass].inPool.concat(perkBuckets[this.itemClass].onlyWithCharm).map(perkId => perkMap[perkId]);
+		// if (i18n.language == 'en') {
+			// this.availablePerks = perkBucketsEN[this.itemClass].inPool.concat(perkBucketsEN[this.itemClass].onlyWithCharm).map(perkId => perkMapEN[perkId]);
+		// }else{
+			// this.availablePerks = perkBucketsEN[this.itemClass].inPool.concat(perkBucketsEN[this.itemClass].onlyWithCharm).map(perkId => perkMapEN[perkId]);
+		// }
         this.labels = this.buildLabelQuantityMap();
     }
 
@@ -192,6 +199,8 @@ export default class PerkCalculator {
             perk.label.forEach(label => {
                 if (!labels[label]) {
                     labels[label] = { perkWeight: 0, weight: weights[label], excludedLabels: new Set() };
+					// labels[label] = { perkWeight: 0, weight: weightsEN[label], excludedLabels: new Set() };
+					// labels[label] = { perkWeight: 0, weight: weightsFR[label], excludedLabels: new Set() };
                 }
                 labels[label].perkWeight += perk.weight;
                 perk.label.forEach(labelToadd => {

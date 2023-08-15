@@ -14,7 +14,15 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import logoToolbar from './res/logoToolbar.png'
 
+//Translation module
+import { useTranslation} from 'react-i18next';
+const locales = {
+  en: { title: 'English' },
+  fr: { title: 'French' },
+};
+
 function App() {
+	const { t, i18n } = useTranslation();
     return (
         <>
             <BrowserRouter>
@@ -27,6 +35,12 @@ function App() {
                                         <img style={{ height: '2em', marginRight: '1em' }} src={logoToolbar} alt='Aeternum Craft' />
                                     </div>
                                 </Link>
+								{i18n.language}
+										<ul>{Object.keys(locales).map((locale) => (
+											<button style={{ fontWeight: i18n.resolvedLanguage === locale ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(locale)}>
+												{locales[locale].title}
+											</button>
+										))}</ul>
                             </Toolbar>
                         </Container>
                     </AppBar>
